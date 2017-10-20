@@ -1,0 +1,96 @@
+* {
+    margin:0;
+    padding:0;
+}
+*, :after, :before {
+    box-sizing: inherit;
+}
+body {
+    overflow-x: hidden;
+    min-width: 320px;
+    background: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.4285em;
+    color: rgba(0,0,0,.87);
+    font-smoothing: antialiased;
+}
+html {
+    font-size: 14px;
+}
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+.hide {
+    display: none;
+}
+ul {
+   list-style:none; 
+}
+li a {
+    color:inherit;
+}
+a {
+    text-decoration: none;
+}
+.main {
+    width:70%;
+    margin:0 auto;
+    border:thin solid #9D9D9D;
+    box-shadow: 3px 3px 5px #9D9D9D,-3px 3px 5px #9D9D9D;
+}
+/*导航条*/
+ul.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;   
+}
+
+ul.flex li {
+    display: block;
+    flex:1;
+    height:32px;
+    line-height: 32px;
+    text-transform:uppercase;
+}
+.navLink {
+    border-bottom: 3px solid #764C28;
+}
+.sepia {
+    background:  #E7D6C2;
+    color:#000;
+    position: relative;
+}
+.sepia:not(:last-child) {
+    margin-right: 2px;
+}
+.sepia:hover,
+.sepia.active {
+    background: #764C28;
+    color:#fff;
+    cursor:pointer;
+}
+.sepia:first-letter {
+    font-size:16px;
+}
+
+.sub-ul {
+    visibility: hidden;
+    opacity: 0;
+    color:#000;
+}
+.sepia:hover .sub-ul {
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease-out;
+}
+.sub-ul .sepia {
+    text-align: left;
+    box-sizing: border-box;
+    padding:0 100px 0 20px;
+    margin:2px 0;
+}
